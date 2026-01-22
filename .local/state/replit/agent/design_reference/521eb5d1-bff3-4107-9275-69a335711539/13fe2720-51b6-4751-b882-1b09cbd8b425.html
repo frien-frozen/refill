@@ -1,0 +1,798 @@
+<html lang="uz" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refill - Yoqilg'i Shahobchalarini Toping</title>
+    <meta name="description" content="Refill ilovasi orqali eng yaqin yoqilg'i shahobchalarini toping, narxlarni solishtiring va vaqtingizni tejang.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    'brand-red': '#C73E3A',
+                    'brand-red-dark': '#B73B37',
+                    'brand-red-light': '#F5E8E8',
+                },
+                fontFamily: {
+                    'inter': ['Inter', 'sans-serif'],
+                }
+            }
+        }
+    };
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="font-inter antialiased bg-gray-50">
+    <!-- @COMPONENT: NavigationHeader -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-3">
+                    <!-- Refill logo with flame icon -->
+                    <div class="w-10 h-10 bg-brand-red rounded-lg flex items-center justify-center">
+                        <i class="fas fa-fire text-white text-lg"></i>
+                    </div>
+                    <span class="text-xl font-bold text-gray-900">Refill</span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-gray-700 hover:text-brand-red transition-colors">Imkoniyatlar</a>
+                    <a href="#screenshots" class="text-gray-700 hover:text-brand-red transition-colors">Skrinshot</a>
+                    <a href="#download" class="text-gray-700 hover:text-brand-red transition-colors">Yuklab olish</a>
+                    <a href="#contact" class="text-gray-700 hover:text-brand-red transition-colors">Aloqa</a>
+                </div>
+                
+                <!-- Language selector -->
+                <div class="flex items-center space-x-4">
+                    <select class="text-sm bg-transparent border border-gray-300 rounded-md px-3 py-1 focus:outline-none focus:border-brand-red">
+                        <option>O'zbek</option>
+                        <option>Русский</option>
+                        <option>English</option>
+                    </select>
+                    
+                    <button class="md:hidden text-gray-700">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- @END_COMPONENT: NavigationHeader -->
+
+    <!-- @COMPONENT: HeroSection -->
+    <section class="bg-gradient-to-br from-brand-red-light to-white py-16 lg:py-24">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+                <div class="mb-12 lg:mb-0">
+                    <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight mb-6">
+                        Yoqilg'i <span class="text-brand-red">shahobchalariga</span> navbat olish
+                    </h1>
+                    
+                    <ul class="space-y-3 mb-8 text-lg text-gray-700">
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-brand-red mt-1"></i>
+                            <span>Yaqin shahobchalarni topish va navbat qolish</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-brand-red mt-1"></i>
+                            <span>Turli shahob yoqilg'i narxlarini solishtirish</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-brand-red mt-1"></i>
+                            <span>Shahobning haqiqiy holati haqida ma'lumot</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-brand-red mt-1"></i>
+                            <span>Vaqtingizni saqlang va eng optimal variant tanlang</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <button class="bg-brand-red hover:bg-brand-red-dark text-white px-8 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center space-x-2">
+                            <i class="fab fa-google-play"></i>
+                            <span>Google Play</span>
+                        </button>
+                        <button class="bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center space-x-2">
+                            <i class="fab fa-apple"></i>
+                            <span>App Store</span>
+                        </button>
+                    </div>
+                    
+                    <div class="flex items-center space-x-1 mt-6">
+                        <i class="fas fa-circle text-brand-red text-xs"></i>
+                        <i class="fas fa-circle text-gray-300 text-xs"></i>
+                        <i class="fas fa-circle text-gray-300 text-xs"></i>
+                        <i class="fas fa-circle text-gray-300 text-xs"></i>
+                    </div>
+                </div>
+                
+                <div class="relative flex justify-center lg:justify-end">
+                    <!-- Phone mockup showing the app -->
+                    <div class="relative">
+                        <div class="w-80 h-96 bg-brand-red rounded-[3rem] p-2 shadow-2xl">
+                            <div class="w-full h-full bg-white rounded-[2.5rem] relative overflow-hidden">
+                                <!-- Status bar -->
+                                <div class="flex justify-between items-center px-6 pt-3 text-xs text-white bg-brand-red">
+                                    <span>17:12</span>
+                                    <div class="flex items-center space-x-1">
+                                        <i class="fas fa-signal"></i>
+                                        <i class="fas fa-wifi"></i>
+                                        <span>82</span>
+                                    </div>
+                                </div>
+                                
+                                <!-- App content -->
+                                <div class="px-6 py-8 text-center bg-brand-red text-white h-full flex flex-col justify-center">
+                                    <div class="w-16 h-16 bg-white rounded-full mx-auto mb-4 flex items-center justify-center">
+                                        <i class="fas fa-globe text-brand-red text-xl"></i>
+                                    </div>
+                                    <h3 class="text-xl font-bold mb-2">Refill</h3>
+                                    <p class="text-sm mb-8">Qulay rejimni tanlang:</p>
+                                    
+                                    <div class="space-y-3">
+                                        <button class="w-full bg-white text-brand-red py-3 rounded-lg font-semibold">
+                                            Yorqin
+                                        </button>
+                                        <button class="w-full bg-gray-900 text-white py-3 rounded-lg font-semibold">
+                                            Qorong'i
+                                        </button>
+                                    </div>
+                                    
+                                    <div class="flex justify-center space-x-2 mt-8">
+                                        <i class="fas fa-circle text-white text-xs"></i>
+                                        <i class="fas fa-circle text-gray-400 text-xs"></i>
+                                        <i class="fas fa-circle text-gray-400 text-xs"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: HeroSection -->
+
+    <!-- @COMPONENT: LanguageSectionFeature -->
+    <section id="features" class="py-16 lg:py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+                        Yoqilg'i shahobchalarini virtual xaritada ko'rish
+                    </h2>
+                    
+                    <p class="text-lg text-gray-700 mb-8">
+                        Bizning xaritamiz orqali shahobchalarni oson topishingiz va eng yaqin yoki eng arzon variantni tanlashingiz mumkin. Har bir shahobning haqiqiy ma'lumotlarini ko'ring.
+                    </p>
+                    
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-map-marker-alt text-brand-red mt-1"></i>
+                            <span>Real vaqt rejimida shahoblar joylashuvi</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-dollar-sign text-brand-red mt-1"></i>
+                            <span>Joriy yoqilg'i narxlari va chegirmalar</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-clock text-brand-red mt-1"></i>
+                            <span>Ish vaqti va holati haqida ma'lumot</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="order-1 lg:order-2 mb-12 lg:mb-0 flex justify-center">
+                    <!-- Language selection phone mockup -->
+                    <div class="w-72 h-80 bg-white rounded-[2.5rem] shadow-2xl border border-gray-200 relative overflow-hidden">
+                        <!-- Status bar -->
+                        <div class="flex justify-between items-center px-6 pt-3 text-xs text-black">
+                            <span>17:12</span>
+                            <div class="flex items-center space-x-1">
+                                <i class="fas fa-signal"></i>
+                                <i class="fas fa-wifi"></i>
+                                <span>82</span>
+                            </div>
+                        </div>
+                        
+                        <!-- App content -->
+                        <div class="px-6 py-6 text-center">
+                            <div class="w-12 h-12 border-2 border-black rounded-full mx-auto mb-4 flex items-center justify-center">
+                                <i class="fas fa-globe text-black text-lg"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2 text-brand-red">Tilni Tanlang</h3>
+                            <p class="text-sm mb-6 text-gray-600">O'zingizga qulay tilni tanlang:</p>
+                            
+                            <div class="space-y-3">
+                                <button class="w-full bg-brand-red text-white py-3 rounded-lg font-semibold">
+                                    English
+                                </button>
+                                <button class="w-full bg-brand-red text-white py-3 rounded-lg font-semibold">
+                                    Русский
+                                </button>
+                                <button class="w-full bg-brand-red text-white py-3 rounded-lg font-semibold">
+                                    O'zbek
+                                </button>
+                                <button class="w-full bg-brand-red text-white py-3 rounded-lg font-semibold">
+                                    Кирилча
+                                </button>
+                                <button class="w-full bg-brand-red text-white py-3 rounded-lg font-semibold">
+                                    Тоҷикӣ
+                                </button>
+                            </div>
+                            
+                            <div class="flex justify-center space-x-2 mt-6">
+                                <i class="fas fa-circle text-gray-400 text-xs"></i>
+                                <i class="fas fa-circle text-brand-red text-xs"></i>
+                                <i class="fas fa-circle text-gray-400 text-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: LanguageSectionFeature -->
+
+    <!-- @COMPONENT: LocationFeatureSection -->
+    <section class="py-16 lg:py-24 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+                <div class="mb-12 lg:mb-0 flex justify-center">
+                    <!-- Location/Map phone mockup -->
+                    <div class="w-72 h-80 bg-white rounded-[2.5rem] shadow-2xl border border-gray-200 relative overflow-hidden">
+                        <!-- Status bar -->
+                        <div class="flex justify-between items-center px-6 pt-3 text-xs text-black">
+                            <span>17:12</span>
+                            <div class="flex items-center space-x-1">
+                                <i class="fas fa-signal"></i>
+                                <i class="fas fa-wifi"></i>
+                                <span>82</span>
+                            </div>
+                        </div>
+                        
+                        <!-- App content -->
+                        <div class="px-6 py-6 text-center">
+                            <div class="w-12 h-12 bg-black rounded-full mx-auto mb-4 flex items-center justify-center">
+                                <i class="fas fa-fire text-white text-lg"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2 text-brand-red">Refill Ilovasi</h3>
+                            <p class="text-sm mb-6 text-gray-600">Refill Ilovasini ishlatishni boshlang!</p>
+                            
+                            <!-- Mock map with location pins -->
+                            <div class="bg-blue-100 rounded-lg p-4 mb-6 relative" style="height: 120px;">
+                                <!-- Map background illustration -->
+                                <div class="absolute inset-0 bg-gradient-to-br from-blue-200 to-blue-300 rounded-lg opacity-50"></div>
+                                
+                                <!-- Location pins -->
+                                <div class="relative">
+                                    <i class="fas fa-map-marker-alt text-brand-red text-xl absolute top-2 left-4"></i>
+                                    <i class="fas fa-map-marker-alt text-brand-red text-xl absolute top-6 right-6"></i>
+                                    <i class="fas fa-map-marker-alt text-brand-red text-xl absolute bottom-4 left-8"></i>
+                                    <i class="fas fa-map-marker-alt text-brand-red text-xl absolute bottom-2 right-4"></i>
+                                </div>
+                                
+                                <!-- Road/path lines -->
+                                <svg class="absolute inset-0 w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                                    <path d="M10,50 Q50,20 90,50" stroke="#gray" stroke-width="2" fill="none" opacity="0.3"/>
+                                    <path d="M30,10 Q50,50 70,90" stroke="#gray" stroke-width="2" fill="none" opacity="0.3"/>
+                                </svg>
+                            </div>
+                            
+                            <button class="w-full bg-brand-red text-white py-3 rounded-lg font-semibold">
+                                Tizimga Kiring
+                            </button>
+                            
+                            <div class="flex justify-center space-x-2 mt-6">
+                                <i class="fas fa-circle text-gray-400 text-xs"></i>
+                                <i class="fas fa-circle text-gray-400 text-xs"></i>
+                                <i class="fas fa-circle text-brand-red text-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+                        To'g'ridan-to'g'ri navbatga qo'yishga navba noyobor qilish
+                    </h2>
+                    
+                    <p class="text-lg text-gray-700 mb-8">
+                        Ilovamiz orqali yoqilg'i shahobchalariga navbat olishingiz va kutish vaqtingizni qisqartirishingiz mumkin. Oldindan joy band qiling va vaqtingizni saqlang.
+                    </p>
+                    
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-clock text-brand-red mt-1"></i>
+                            <span>Kutish vaqtini 70% gacha qisqartiring</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-mobile-alt text-brand-red mt-1"></i>
+                            <span>Navbat holati haqida real vaqtda xabar</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-bell text-brand-red mt-1"></i>
+                            <span>Navbat navbati kelganida bildirishnoma</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: LocationFeatureSection -->
+
+    <!-- @COMPONENT: SurveyFeatureSection -->
+    <section class="py-16 lg:py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+                        Ҳайдовчининг анкетаси
+                    </h2>
+                    
+                    <p class="text-lg text-gray-700 mb-8">
+                        Shahobchalar haqida fikr-mulohaza qoldiring va boshqa foydalanuvchilar tajribasidan foydalaning. Har bir shahobning sifati haqida haqiqiy ma'lumot oling.
+                    </p>
+                    
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-star text-brand-red mt-1"></i>
+                            <span>Shahoblarni baholash va sharh qoldirish</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-users text-brand-red mt-1"></i>
+                            <span>Boshqa foydalanuvchilar fikrlarini o'qish</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-chart-line text-brand-red mt-1"></i>
+                            <span>Shahob sifati bo'yicha umumiy statistika</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-camera text-brand-red mt-1"></i>
+                            <span>Foto va video qo'shish imkoniyati</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="order-1 lg:order-2 mb-12 lg:mb-0 flex justify-center">
+                    <!-- Survey/Review phone mockup -->
+                    <div class="w-72 h-80 bg-white rounded-[2.5rem] shadow-2xl border border-gray-200 relative overflow-hidden">
+                        <!-- Status bar -->
+                        <div class="flex justify-between items-center px-6 pt-3 text-xs text-black">
+                            <span>17:12</span>
+                            <div class="flex items-center space-x-1">
+                                <i class="fas fa-signal"></i>
+                                <i class="fas fa-wifi"></i>
+                                <span>82</span>
+                            </div>
+                        </div>
+                        
+                        <!-- App content -->
+                        <div class="px-6 py-6">
+                            <div class="w-12 h-12 border-2 border-black rounded-full mx-auto mb-4 flex items-center justify-center">
+                                <i class="fas fa-chart-bar text-black text-lg"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-4 text-center text-gray-900">Baholash</h3>
+                            
+                            <!-- Rating stars -->
+                            <div class="flex justify-center space-x-1 mb-6">
+                                <i class="fas fa-star text-yellow-400 text-lg"></i>
+                                <i class="fas fa-star text-yellow-400 text-lg"></i>
+                                <i class="fas fa-star text-yellow-400 text-lg"></i>
+                                <i class="fas fa-star text-yellow-400 text-lg"></i>
+                                <i class="fas fa-star text-gray-300 text-lg"></i>
+                            </div>
+                            
+                            <!-- Survey options -->
+                            <div class="space-y-3">
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                    <span class="text-sm">Xizmat sifati</span>
+                                    <div class="flex space-x-1">
+                                        <i class="fas fa-circle text-brand-red text-xs"></i>
+                                        <i class="fas fa-circle text-brand-red text-xs"></i>
+                                        <i class="fas fa-circle text-gray-300 text-xs"></i>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                    <span class="text-sm">Navbat tezligi</span>
+                                    <div class="flex space-x-1">
+                                        <i class="fas fa-circle text-brand-red text-xs"></i>
+                                        <i class="fas fa-circle text-brand-red text-xs"></i>
+                                        <i class="fas fa-circle text-brand-red text-xs"></i>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                    <span class="text-sm">Narx muvofiqlik</span>
+                                    <div class="flex space-x-1">
+                                        <i class="fas fa-circle text-brand-red text-xs"></i>
+                                        <i class="fas fa-circle text-brand-red text-xs"></i>
+                                        <i class="fas fa-circle text-gray-300 text-xs"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button class="w-full bg-brand-red text-white py-3 rounded-lg font-semibold mt-4">
+                                Yuborish
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: SurveyFeatureSection -->
+
+    <!-- @COMPONENT: ProfileFeatureSection -->
+    <section class="py-16 lg:py-24 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+                <div class="mb-12 lg:mb-0 flex justify-center">
+                    <!-- Profile phone mockup -->
+                    <div class="w-72 h-80 bg-white rounded-[2.5rem] shadow-2xl border border-gray-200 relative overflow-hidden">
+                        <!-- Status bar -->
+                        <div class="flex justify-between items-center px-6 pt-3 text-xs text-black">
+                            <span>17:12</span>
+                            <div class="flex items-center space-x-1">
+                                <i class="fas fa-signal"></i>
+                                <i class="fas fa-wifi"></i>
+                                <span>82</span>
+                            </div>
+                        </div>
+                        
+                        <!-- App content -->
+                        <div class="px-6 py-6">
+                            <div class="text-center mb-6">
+                                <div class="w-16 h-16 bg-gray-200 rounded-full mx-auto mb-3 flex items-center justify-center">
+                                    <i class="fas fa-user text-gray-600 text-xl"></i>
+                                </div>
+                                <h3 class="font-bold text-gray-900">Foydalanuvchi Profili</h3>
+                            </div>
+                            
+                            <!-- Profile menu items -->
+                            <div class="space-y-3">
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fas fa-history text-gray-600"></i>
+                                        <span class="text-sm">Navbat tarixi</span>
+                                    </div>
+                                    <i class="fas fa-chevron-right text-gray-400"></i>
+                                </div>
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fas fa-star text-gray-600"></i>
+                                        <span class="text-sm">Sevimli shahoblar</span>
+                                    </div>
+                                    <i class="fas fa-chevron-right text-gray-400"></i>
+                                </div>
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fas fa-cog text-gray-600"></i>
+                                        <span class="text-sm">Sozlamalar</span>
+                                    </div>
+                                    <i class="fas fa-chevron-right text-gray-400"></i>
+                                </div>
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fas fa-bell text-gray-600"></i>
+                                        <span class="text-sm">Bildirishnomalar</span>
+                                    </div>
+                                    <i class="fas fa-chevron-right text-gray-400"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+                        Ҳайдовчилар учун энг мукаммал йўриқнома
+                    </h2>
+                    
+                    <p class="text-lg text-gray-700 mb-8">
+                        Shaxsiy profilingizni yarating va ilovadan maksimal foyda oling. Barcha ma'lumotlaringiz xavfsiz saqlanadi.
+                    </p>
+                    
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-user-circle text-brand-red mt-1"></i>
+                            <span>Shaxsiy profil yaratish va boshqarish</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-bookmark text-brand-red mt-1"></i>
+                            <span>Sevimli shahoblarni saqlash</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-chart-pie text-brand-red mt-1"></i>
+                            <span>Yoqilg'i sarfi statistikasi</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-shield-alt text-brand-red mt-1"></i>
+                            <span>Ma'lumotlar xavfsizligi va maxfiylik</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: ProfileFeatureSection -->
+
+    <!-- @COMPONENT: DownloadSection -->
+    <section id="download" class="py-16 lg:py-24 bg-brand-red">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-8">
+                <div class="w-20 h-20 bg-white rounded-2xl mx-auto mb-6 flex items-center justify-center shadow-lg">
+                    <i class="fas fa-fire text-brand-red text-3xl"></i>
+                </div>
+                <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">
+                    Refill ilovasini yuklab oling
+                </h2>
+                <p class="text-xl text-red-100 max-w-2xl mx-auto">
+                    Yoqilg'i shahobchalarini topish va navbat olish endi juda oson. Ilovasni yuklab olib, vaqtingizni tejang.
+                </p>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-8">
+                <!-- Google Play Button -->
+                <a href="#" data-event="click:downloadAndroid" class="bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-lg font-semibold transition-colors flex items-center justify-center space-x-3 min-w-[200px]">
+                    <i class="fab fa-google-play text-2xl"></i>
+                    <div class="text-left">
+                        <div class="text-xs text-gray-300">Yuklab olish</div>
+                        <div class="text-lg font-bold">Google Play</div>
+                    </div>
+                </a>
+                
+                <!-- App Store Button -->
+                <a href="#" data-event="click:downloadIOS" class="bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-lg font-semibold transition-colors flex items-center justify-center space-x-3 min-w-[200px]">
+                    <i class="fab fa-apple text-2xl"></i>
+                    <div class="text-left">
+                        <div class="text-xs text-gray-300">Yuklab olish</div>
+                        <div class="text-lg font-bold">App Store</div>
+                    </div>
+                </a>
+            </div>
+            
+            <p class="text-red-200 text-sm">
+                Bepul yuklab oling • Android va iOS uchun mavjud
+            </p>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: DownloadSection -->
+
+    <!-- @COMPONENT: SupportersSection -->
+    <section class="py-16 bg-gray-900">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h3 class="text-xl font-semibold text-white mb-2">Қолловчи ташкилотлар</h3>
+                <p class="text-gray-400">Refill loyihasini qo'llab-quvvatlovchi rasmiy tashkilotlar</p>
+            </div>
+            
+            <!-- @MAP: supporters.map(supporter => ( -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-gray-800 rounded-lg mb-3 flex items-center justify-center">
+                        <i class="fas fa-shield-alt text-gray-400 text-xl"></i>
+                    </div>
+                    <span class="text-white text-sm font-medium">Ички ишлар вазирлиги</span>
+                </div>
+                
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-gray-800 rounded-lg mb-3 flex items-center justify-center">
+                        <i class="fas fa-road text-gray-400 text-xl"></i>
+                    </div>
+                    <span class="text-white text-sm font-medium">Йўл ҳаракати хавфсизлиги бошқармаси</span>
+                </div>
+                
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-gray-800 rounded-lg mb-3 flex items-center justify-center">
+                        <i class="fas fa-building text-gray-400 text-xl"></i>
+                    </div>
+                    <span class="text-white text-sm font-medium">Тошкент шаҳар ҳокимлиги</span>
+                </div>
+                
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-gray-800 rounded-lg mb-3 flex items-center justify-center">
+                        <i class="fas fa-truck text-gray-400 text-xl"></i>
+                    </div>
+                    <span class="text-white text-sm font-medium">Транспорт вазирлиги</span>
+                </div>
+            </div>
+            <!-- @END_MAP )) -->
+        </div>
+    </section>
+    <!-- @END_COMPONENT: SupportersSection -->
+
+    <!-- @COMPONENT: ContactSection -->
+    <section id="contact" class="py-16 lg:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                    Bizga murojaat qiling
+                </h2>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                    Savol yoki takliflaringiz bormi? Biz bilan bog'laning va sizning fikringizni eshitishdan xursandmiz.
+                </p>
+            </div>
+            
+            <div class="bg-gray-50 rounded-2xl p-8">
+                <!-- @STATE: contactForm:object = {name:'', email:'', message:''} -->
+                <form class="space-y-6" data-event="submit:handleContactSubmit">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Ism</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name"
+                                data-bind="contactForm.name"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-red focus:border-transparent transition-colors"
+                                placeholder="Ismingizni kiriting"
+                                data-mock="true"
+                            >
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email"
+                                data-bind="contactForm.email"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-red focus:border-transparent transition-colors"
+                                placeholder="email@example.com"
+                                data-mock="true"
+                            >
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Xabar</label>
+                        <textarea 
+                            id="message" 
+                            name="message"
+                            rows="5"
+                            data-bind="contactForm.message"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-red focus:border-transparent transition-colors resize-none"
+                            placeholder="Xabaringizni yozing..."
+                            data-mock="true"
+                        ></textarea>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button 
+                            type="submit"
+                            data-implementation="Should validate form before submission"
+                            class="bg-brand-red hover:bg-brand-red-dark text-white px-8 py-3 rounded-lg font-semibold transition-colors inline-flex items-center space-x-2"
+                        >
+                            <span>Xabar yuborish</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: ContactSection -->
+
+    <!-- @COMPONENT: Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Brand Column -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-brand-red rounded-lg flex items-center justify-center">
+                            <i class="fas fa-fire text-white text-lg"></i>
+                        </div>
+                        <span class="text-xl font-bold">Refill</span>
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-md">
+                        Yoqilg'i shahobchalarini topish va navbat olishning eng qulay usuli. Vaqtingizni tejang va eng yaxshi xizmatdan foydalaning.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-telegram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Links Column -->
+                <div>
+                    <h4 class="font-semibold mb-4">Havolalar</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#features" class="hover:text-white transition-colors">Imkoniyatlar</a></li>
+                        <li><a href="#download" class="hover:text-white transition-colors">Yuklab olish</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">Aloqa</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Yordam</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Column -->
+                <div>
+                    <h4 class="font-semibold mb-4">Aloqa</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-envelope text-sm"></i>
+                            <span>info@refill.uz</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-phone text-sm"></i>
+                            <span>+998 (71) 123-45-67</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-map-marker-alt text-sm"></i>
+                            <span>Toshkent, O'zbekiston</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Refill. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <script>
+        (function() {
+            // TODO: Implement business logic, API calls, or state management
+            
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Contact form handling
+            const contactForm = document.querySelector('form[data-event="submit:handleContactSubmit"]');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    // TODO: Implement actual form submission logic
+                    alert('Xabaringiz yuborildi! Tez orada javob beramiz.');
+                });
+            }
+
+            // Download button tracking
+            document.querySelectorAll('[data-event^="click:download"]').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    // TODO: Implement download tracking and redirect logic
+                    const platform = this.dataset.event.includes('Android') ? 'Android' : 'iOS';
+                    console.log(`Download initiated for ${platform}`);
+                });
+            });
+
+            // Language selector handling
+            const languageSelector = document.querySelector('select');
+            if (languageSelector) {
+                languageSelector.addEventListener('change', function() {
+                    // TODO: Implement language switching logic
+                    console.log(`Language changed to: ${this.value}`);
+                });
+            }
+        })();
+    </script>
+</body>
+</html>
