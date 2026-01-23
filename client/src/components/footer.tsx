@@ -75,7 +75,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <Phone className="h-4 w-4 mr-2" />
-                <span>+998946887004</span>
+                <span>+998944101777</span>
               </li>
               <li className="flex items-center">
                 <MapPin className="h-4 w-4 mr-2" />
@@ -83,7 +83,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-        </div>
+        </div>``
         
         <hr className="border-gray-700 my-8" />
         

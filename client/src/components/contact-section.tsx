@@ -201,7 +201,7 @@ export default function ContactSection() {
                     </div>
                     <div>
                       <div className="font-semibold text-white">Telefon</div>
-                      <div className="text-white/90">+998946887004</div>
+                      <div className="text-white/90">+998944101777</div>
                     </div>
                   </div>
                   
